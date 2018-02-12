@@ -1,5 +1,5 @@
 # JET DevTools
-This tools is very useful for developer to debug JET codes.
+This tools is very useful for developer to debug JET codes. And it supports JET 4.* syntax.
 
 ![Overall][Overall]
 
@@ -9,7 +9,14 @@ This tools is very useful for developer to debug JET codes.
 
 - [Background](#background)
 - [API](#api)
-    + [jetDebugger.dataFor](#jetdebuggerdatafor)
+    + [jetDebugger.dataFor]
+    + [jetDebugger.dataForToJs](#jetdebuggerdatafortojs)
+    + [jetDebugger.contextFor](#jetdebuggercontextfor)
+    + [jetDebugger.contextForToJs](#jetdebuggercontextfortojs)
+    + [jetDebugger.getBindings](#jetdebuggergetbindings)
+    + [jetDebugger.getBindingsToJs](#jetdebuggergetbindingstojs)
+    + [jetDebugger.toJs](#jetdebuggertojs)
+    + [jetDebugger.inspect](#jetdebuggerinspect)
 - [Future Changes](#future-changes)
 
 <!-- /MarkdownTOC -->
@@ -64,7 +71,60 @@ jetDebugger.dataFor('oj-buttonset-one')
 
 The binding data.
 
+### jetDebugger.dataForToJs
+Same with [jetDebugger.dataFor](#jetdebuggerdatafor). But difference is that the function unwrap all observables.
 
+### jetDebugger.contextFor
+
+#### Syntax
+
+jetDebugger.context([selector])
+
+#### Description 
+
+It's used to return ko.contextFor. 
+
+#### Usage:
+
+1. Select one html element in Elements tab of chrome devTools. call this function with no argument in the console.
+```javascript
+jetDebugger.contextFor()
+```
+
+2. Call this function with one argument. The argument is selector. For example:
+```javascript
+jetDebugger.contextFor('oj-buttonset-one')
+```
+
+#### Return value
+
+The binding context.
+
+### jetDebugger.getBindings
+
+#### Syntax
+
+jetDebugger.getBindings([selector])
+
+#### Description 
+
+It's used to return the binding detail. It returns both knockout binding and JET binding. For JET binding, it supports JET attribute binding (e.g., :id, :style, :style.font-style)
+
+#### Usage:
+
+1. Select one html element in Elements tab of chrome devTools. call this function with no argument in the console.
+```javascript
+jetDebugger.getBindings()
+```
+
+2. Call this function with one argument. The argument is selector. For example:
+```javascript
+jetDebugger.getBindings('oj-buttonset-one')
+```
+
+#### Return value
+
+The bindings.
 
 ## Future Changes
 

@@ -9,7 +9,7 @@ This tools is very useful for developer to debug JET codes.
 
 - [Background](#background)
 - [API](#api)
-    + [jetDebugger.dataFor](#jetDebugger.dataFor)
+    + [jetDebugger.dataFor](#jetdebuggerdatafor)
 - [Future Changes](#future-changes)
 
 <!-- /MarkdownTOC -->

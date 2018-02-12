@@ -177,7 +177,7 @@ The inspected item.
 
 ## Future Changes
 
-- The #jetDebugger# variable is hardcoded. In future, provide a way to customize. It may have name conflict.
+- The _jetDebugger_ variable is hardcoded. In future, provide a way to customize. It may have name conflict.
 - Support developer panel like knockout js panel. But more powerful.
     + Support search.
     + Support change value.

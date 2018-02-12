@@ -9,7 +9,7 @@ This tools is very useful for developer to debug JET codes. And it supports JET 
 
 - [Background](#background)
 - [API](#api)
-    + [jetDebugger.dataFor]
+    + [jetDebugger.dataFor](#jetdebuggerdatafor)
     + [jetDebugger.dataForToJs](#jetdebuggerdatafortojs)
     + [jetDebugger.contextFor](#jetdebuggercontextfor)
     + [jetDebugger.contextForToJs](#jetdebuggercontextfortojs)
@@ -100,6 +100,9 @@ jetDebugger.contextFor('oj-buttonset-one')
 
 The binding context.
 
+### jetDebugger.contextForToJs
+Same with [jetDebugger.contextFor](#jetdebuggercontextfor). But difference is that the function unwrap all observables.
+
 ### jetDebugger.getBindings
 
 #### Syntax
@@ -126,6 +129,57 @@ jetDebugger.getBindings('oj-buttonset-one')
 
 The bindings.
 
+### jetDebugger.getBindingsToJs
+Same with [jetDebugger.getBindings](#jetdebuggergetbindings). But difference is that the function unwrap all observables.
+
+### jetDebugger.toJs
+
+#### Syntax
+
+jetDebugger.toJs(obj)
+
+#### Description 
+
+It's similar with ko.toJS to unwrap observables in the object. But in case recursive loopping, this function only loop 20 levels deep.
+
+#### Usage:
+
+Pass in the object as the first parameter. 
+```javascript
+jetDebugger.toJs(obj)
+```
+
+#### Return value
+
+The unwrapped object.
+
+### jetDebugger.inspect
+
+#### Syntax
+
+jetDebugger.inspect(obj)
+
+#### Description 
+
+It's similar with inspect function in chrome console. But chrome inspect does not support selector. For example, chrome support `inspect(document.body)`, but does not support `inspect('#testBtn')`
+
+#### Usage:
+
+Pass in the object as the first parameter. 
+```javascript
+jetDebugger.inspect(obj)
+```
+
+
+#### Return value
+
+The inspected item.
+
 ## Future Changes
+
+- The #jetDebugger# variable is hardcoded. In future, provide a way to customize. It may have name conflict.
+- Support developer panel like knockout js panel. But more powerful.
+    + Support search.
+    + Support change value.
 
 [Overall]: https://github.com/wenlz123/chromeextensions-jet-devtools/blob/master/wiki/overall.png

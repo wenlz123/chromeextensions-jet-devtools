@@ -9,6 +9,7 @@ This tools is very useful for developer to debug JET codes.
 
 - [Background](#background)
 - [API](#api)
+    + [jetDebugger.dataFor](#jetDebugger.dataFor)
 - [Future Changes](#future-changes)
 
 <!-- /MarkdownTOC -->
@@ -37,9 +38,15 @@ Developer wants to know the bindings like below:
 
 All APIs are under *jetDebugger* object.
 
-### jetDebugger.dataFor([selector])
+### jetDebugger.dataFor
 
-Description: It's used to return ko.dataFor. 
+#### Syntax
+
+jetDebugger.dataFor([selector])
+
+#### Description 
+
+It's used to return ko.dataFor. 
 
 #### Usage:
 

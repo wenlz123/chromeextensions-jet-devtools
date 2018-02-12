@@ -9,7 +9,7 @@ This tools is very useful for developer to debug JET codes.
 
 - [Background](#background)
 - [API](#api)
-- [Future Changes](#future_changes)
+- [Future Changes](#future-changes)
 
 <!-- /MarkdownTOC -->
 

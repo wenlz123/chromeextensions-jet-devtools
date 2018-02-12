@@ -3,11 +3,13 @@ This tools is very useful for developer to debug JET codes.
 
 ![Overall][Overall]
 
-# JET DevTools
+## Overview
 
 <!-- MarkdownTOC autolink="true" bracket="round" markdown_preview="markdown" -->
 
 - [Background](#background)
+- [API](#api)
+- [Future Changes](#future_changes)
 
 <!-- /MarkdownTOC -->
 

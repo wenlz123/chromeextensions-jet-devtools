@@ -31,20 +31,31 @@ Developer wants to know the bindings like below:
 ```
 5. It's only for knockout. We need to tool that we can debug JET code. 
 
-```html
-<div data-bind="text: label, visible: visibleFlg">Country</div>
-```
-
-
-```javascript
-{
-    text: 'text',
-    visible: true
-}
-```
-
-
 ## API
+
+All APIs are under *jetDebugger* object.
+
+### jetDebugger.dataFor([selector])
+
+Description: It's used to return ko.dataFor. 
+
+#### Usage:
+
+1. Select one html element in Elements tab of chrome devTools. call this function with no argument in the console.
+```javascript
+jetDebugger.dataFor()
+```
+
+2. Call this function with one argument. The argument is selector. For example:
+```javascript
+jetDebugger.dataFor('oj-buttonset-one')
+```
+
+#### Return value
+
+The binding data.
+
+
 
 ## Future Changes
 

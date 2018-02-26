@@ -3,6 +3,8 @@ This tools is very useful for developer to debug JET codes. And it supports JET 
 
 ![Overall][Overall]
 
+![Sidebar][Sidebar]
+
 ## Overview
 
 <!-- MarkdownTOC autolink="true" bracket="round" markdown_preview="markdown" -->
@@ -39,7 +41,12 @@ Developer wants to know the bindings like below:
     visible: true
 }
 ```
-5. It's only for knockout. We need to tool that we can debug JET code. 
+But knockout plugin does not support it.
+5. It's only for knockout. We need to tool that we can debug JET code. Especially for JET CCAs.
+
+## JET Sidebar
+
+In the JET sidebar of under Elements tab, you can find bindings, context and data detail for both observable and unwrap values.
 
 ## API
 
@@ -183,3 +190,4 @@ The inspected item.
     + Support change value.
 
 [Overall]: https://github.com/wenlz123/chromeextensions-jet-devtools/blob/master/wiki/overall.png
+[Sidebar]: https://github.com/wenlz123/chromeextensions-jet-devtools/blob/master/wiki/sidebar.png

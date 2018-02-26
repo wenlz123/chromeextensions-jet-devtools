@@ -1,9 +1,9 @@
 # JET DevTools
 This tools is very useful for developer to debug JET codes. And it supports JET 4.* syntax.
 
-![Overall][Overall]
-
 ![Sidebar][Sidebar]
+
+![Overall][Overall]
 
 ## Overview
 
@@ -189,5 +189,5 @@ The inspected item.
     + Support search.
     + Support change value.
 
-[Overall]: https://github.com/wenlz123/chromeextensions-jet-devtools/blob/master/wiki/overall.png
 [Sidebar]: https://github.com/wenlz123/chromeextensions-jet-devtools/blob/master/wiki/sidebar.png
+[Overall]: https://github.com/wenlz123/chromeextensions-jet-devtools/blob/master/wiki/overall.png

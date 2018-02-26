@@ -10,6 +10,7 @@ This tools is very useful for developer to debug JET codes. And it supports JET 
 <!-- MarkdownTOC autolink="true" bracket="round" markdown_preview="markdown" -->
 
 - [Background](#background)
+- [Jet Sidebar](#jet-sidebar)
 - [API](#api)
     + [jetDebugger.dataFor](#jetdebuggerdatafor)
     + [jetDebugger.dataForToJs](#jetdebuggerdatafortojs)

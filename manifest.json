@@ -1,6 +1,6 @@
 {
     "name": "JET DevTools",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "description":
             "Useful dev tools for JET developers",
 
@@ -21,6 +21,9 @@
     "manifest_version": 2,
 
     "web_accessible_resources": [
-        "img/jet_48.png"
-    ]
+        "img/jet_48.png",
+        "pages/devtools-background.html"
+    ],
+    
+    "devtools_page": "pages/devtools-background.html"
 }

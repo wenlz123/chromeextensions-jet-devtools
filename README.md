@@ -186,9 +186,9 @@ The inspected item.
 ## Future Changes
 
 - The _jetDebugger_ variable is hardcoded. In future, provide a way to customize. It may have name conflict.
-- Support developer panel like knockout js panel. But more powerful.
-    + Support search.
-    + Support change value.
+- Easy to:
+    + Search.
+    + Change value.
 
 [Sidebar]: https://github.com/wenlz123/chromeextensions-jet-devtools/blob/master/wiki/sidebar.png
 [Overall]: https://github.com/wenlz123/chromeextensions-jet-devtools/blob/master/wiki/overall.png

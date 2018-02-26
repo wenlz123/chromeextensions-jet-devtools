@@ -43,7 +43,8 @@ Developer wants to know the bindings like below:
 }
 ```
 But knockout plugin does not support it.
-5. It's only for knockout. We need to tool that we can debug JET code. Especially for JET CCAs.
+
+5. It's only for knockout. We need to tool that we can debug JET code. Especially for JET CCAs and new JET 4.* syntax.
 
 ## JET Sidebar
 

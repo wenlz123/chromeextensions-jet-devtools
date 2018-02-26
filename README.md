@@ -190,6 +190,7 @@ The inspected item.
 - Easy to:
     + Search.
     + Change value.
+- Code format. Use ES6 syntax to import and export. 
 
 [Sidebar]: https://github.com/wenlz123/chromeextensions-jet-devtools/blob/master/wiki/sidebar.png
 [Overall]: https://github.com/wenlz123/chromeextensions-jet-devtools/blob/master/wiki/overall.png

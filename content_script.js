@@ -75,7 +75,6 @@ function customConsole() {
                         if (koBinding !== null) {
                             result.ko = koBinding;
                         }
-                        console.log(22222);
                         let attrs = elem.attributes;
                         if (attrs) {// comment is empty
                             for (let i = 0; i < attrs.length; i++) {
@@ -213,11 +212,11 @@ function contentScriptMain() {
 contentScriptMain();
 
 
-chrome.runtime.onMessage.addListener(
-        function (request, sender, sendResponse) {
-            if (request.greeting === "hello") {
-                sendResponse({farewell: "goodbye"});
-            }
-
-        });
+//chrome.runtime.onMessage.addListener(
+//        function (request, sender, sendResponse) {
+//            if (request.greeting === "hello") {
+//                sendResponse({farewell: "goodbye"});
+//            }
+//
+//        });
 
